@@ -1,0 +1,35 @@
+hr {
+  color: black;
+  background-color: black;
+  border-color: black;
+}
+
+.info-box-outside {
+  margin: 5px;
+  padding: 5px;
+  max-width: 350px;
+  display: inline-block;
+  background:
+    linear-gradient(
+      rgba(19, 5, 5, 0.2),
+      rgba(19, 6, 6, 0.1)
+    ),
+      /* bottom, image */
+    url('/src/assets/images/layout/woodborder.jpg');
+}
+
+.info-box-inside {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+}
+
+p {
+  text-align: left;
+}
+
+.info-box-inside > h1,
+.info-box-inside > h2 {
+  text-align: center;
+
+}

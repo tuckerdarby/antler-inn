@@ -1,0 +1,17 @@
+<div class="carousel-container">
+  <div class="carousel-main mat-elevation-z12" [ngStyle]="{'background-image': backgroundImage}">
+    <div class="carousel-info">
+      <h1>{{currentPane.title}}</h1>
+    </div>
+
+    <div class="carousel-panes">
+      <div class="carousel-pane"
+           *ngFor="let pane of carouselPanes; let idx=index;">
+        <button md-button class="carousel-pane-button md-primary md-accent"
+                   [ngClass]="{'current-pane': idx == paneIndex}"
+                   (click)="setSlide(idx)">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

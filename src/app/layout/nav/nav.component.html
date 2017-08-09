@@ -1,0 +1,43 @@
+<md-toolbar class="md-elevation-z24"
+            id="main-header">
+  <div fxFlex fxLayout="row">
+    <img class="header-title" src="/src/assets/images/logo.png">
+    <!--<label class="header-title">Buffalo Bill's Antler Inn</label>-->
+    <div class="nav-menu"
+         fxFlex
+         fxLayoutAlign="end start"
+         fxLayout="row"
+         *ngIf="!media.isActive('xs') && !media.isActive('sm')">
+      <button md-button color="accent"
+              class="toolbar-button"
+              *ngFor="let btn of menuButtons"
+              (click)="onSelect(btn)"
+              [ngClass]="{'toolbar-button-selected': btn.selected}"
+              routerLink="/{{btn.route}}">
+        {{btn.name}}
+      </button>
+    </div>
+    <div *ngIf="media.isActive('xs') || media.isActive('sm')"
+         class="toolbar-button"
+         fxFlex
+         fxLayoutAlign="end start"
+         fxLayout="row">
+      <button md-button
+              [mdMenuTriggerFor]="menu">
+        <md-icon style="color: white;" svgIcon="menu"></md-icon>
+      </button>
+      <md-menu #menu="mdMenu"
+               fxFlex
+               fxLayout="column">
+        <button md-menu-item
+                *ngFor="let btn of menuButtons"
+                (click)="onSelect(btn)"
+                [ngClass]="{'menu-selected': btn.selected}"
+                routerLink="/{{btn.route}}">
+          {{btn.name}}
+        </button>
+      </md-menu>
+    </div>
+  </div>
+</md-toolbar>
+<div class="wood-underlay mat-elevation-z12">test</div>

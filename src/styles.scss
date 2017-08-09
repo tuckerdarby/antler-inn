@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+//@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+//@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+        rgba(255, 218, 191, 0.88),
+        rgba(255, 218, 191, 0.92)
+    ),
+      /* bottom, image */
+    url(/src/assets/images/layout/woodbg.jpg);
+}
+
+.underline-divider {
+
+  margin: 0 auto 0 auto;
+  display: block;
+  width: 80%;
+  max-height: 20px;
+}
+
+
+.content-header {
+  text-align: center;
+  margin-bottom: -2px;
+}

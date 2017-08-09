@@ -1,0 +1,122 @@
+#content-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.md-button {
+  min-width: 10px;
+}
+
+/*home*/
+#home-toolbar {
+  min-height: 30px;
+  /*color: #ff5300;*/
+  color: #ffae60;
+  /*background-color: #1c0c07;*/
+  /*background-color: rgba(27, 16, 7, 0.86);*/
+  background:
+    linear-gradient(
+      rgba(19, 5, 5, 0.86),
+      rgba(19, 6, 6, 0.86)
+    ),
+      /* bottom, image */
+    url(/src/assets/images/layout/woodtilted.jpeg);
+  border-top: solid 1px black;
+  border-bottom: solid 2px rgba(101, 41, 0, 0.63);
+}
+
+.toolbar-button .selected-page,
+.toolbar-button:hover {
+  color: gold;
+  background-color: gold;
+}
+
+.inner-content {
+  margin: auto;
+  max-width: 800px;
+}
+
+.inner-side-content {
+  float: right;
+  display: inline-block;
+  max-width: 360px;
+}
+
+.info-box-outside {
+  margin: 5px;
+  padding: 5px;
+  max-width: 350px;
+  display: inline-block;
+  background-image: url('/src/assets/images/layout/woodtilted.jpeg');
+}
+
+.info-box-inside {
+  padding: 10px;
+  background-color: white;
+}
+
+.info-box-inside > h1,
+.info-box-inside > h2 {
+  text-align: center;
+
+}
+
+.recommendation {
+  margin: auto;
+  width: 70%;
+  display: block;
+  text-align: center;
+}
+
+/* app css stylesheet */
+#site-background {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+
+}
+
+
+
+#main-content {
+  background-color: rgba(255, 188, 129, 0.15);
+  margin-left: 0px;
+  margin-right: 0px;
+  min-height: 90vh;
+  overflow: visible;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+#main-content > md-content {
+  height: 100%;
+  min-height: 90vh;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255, 218, 191, 0.88),
+      rgba(255, 218, 191, 0.92)
+    ),
+      /* bottom, image */
+    url(/src/assets/images/layout/woodtilted.jpeg);
+}
+
+app-footer {
+  bottom: 0;
+  position: fixed;
+  background-color: #2d0000;
+  width: 100%;
+  min-height: 5%;
+  margin: 0;
+  padding: 0;
+  color: darkgoldenrod;
+  border-top: solid 2px rgba(222, 88, 0, 0.63);
+}

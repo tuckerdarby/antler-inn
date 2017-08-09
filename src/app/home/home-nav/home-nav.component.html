@@ -1,0 +1,10 @@
+<md-toolbar id="home-toolbar"
+            fxFlex
+            fxLayout="row"
+            fxLayoutAlign="center center"
+            class="mat-elevation-z12">
+  <button md-button fxFlex *ngFor="let homeNavButton of homeNavButtons"
+          routerLink="{{homeNavButton.route}}">
+    {{homeNavButton.name}}
+  </button>
+</md-toolbar>
